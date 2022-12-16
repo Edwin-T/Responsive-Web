@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    body{
+        margin: 0;
+        background-color: rgb(219, 219, 204);
+        color: rgb(105, 63, 7);
+    }
+    .header{
+        text-align: center;
+        font-size: 2em;
+        background-color:rgb(37, 33, 33);
+        color: white;
+        margin-top: 20px;
+
+    }
+    .link1{
+            border-radius: 10px;
+            border: 1px solid black;
+            width: 50%;
+            text-align: center;
+            margin-bottom: 10px;
+            
+        }
+        .link1:hover{
+            background-color: black;
+            color: beige;
+        }
+        .btn-group{
+            width: 20%;
+            
+        }
+        .car-content{
+            height: 205px;
+            border: 2px solid grey;
+            width: 40%;
+            margin: auto;
+            margin-top: 40px;
+            justify-content: center;
+        }
+        .text{
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+        }
+        img{
+            max-width: 80%;
+            height: 200px;
+            margin: auto;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(197, 127, 35);
+        }
+        a:hover{
+            color: rgb(197, 127, 35);
+        }
+       
+</style>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+        
+                <div class="col-2 d-none d-lg-block d-xl-block">
+                    <!-- Display only on large screen -->
+                     <h2>Menu</h2>
+                     
+                     <div class="linked">
+                        <a href="Categoriespage.html"><div class="link1">Category Page</div></a>
+                        <a href="ExtraInfo.html"><div class="link1">Extra informaiton</div></a>
+                        <a href="feedbackpage.html"><div class="link1">Feedback Page</div></a>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-10 col-sm-12 col-md-12 ">
+                    <div class="row d-block d-sm-block d-md-none">
+                        <!-- here go the drop down for mobile screen only-->
+                        <!-- Example single danger button -->
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Action
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="Categoriespage.html">Categories</a></li>
+                                    
+                                    <li><a class="dropdown-item" href="ExtraInfo.html">Extra _info</a></li>
+                                    <li><a class="dropdown-item" href="feedbackpage.html">Feedback page</a></li>
+                                    </ul>
+                                </div>
+  
+                    </div>
+                    <div class="row">
+                        <div class="header">Mauritania</div>
+                    </div>
+                    <div class="row d-none d-md-block d-lg-none">
+                        <!-- here goes the drop down menu enable only on tablet -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Action
+                            </button>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Categoriespage.html">Categories</a></li>
+                            <li><a class="dropdown-item" href="ExtraInfo.html">Extra info</a></li>
+                            <li><a class="dropdown-item" href="feedbackpage.html">Feedback page</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        
+                        <!-- here goes the image caroussel -->
+                        <div class="car-content">
+                            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="src/Flag.png" class="d-block w-100" alt="Silent and squirrelly">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>Flag</h5>
+                                      <p></p>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="src/Seal.png" class="d-block w-100" alt="Ain't mah teeth purdy?">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>Seal</h5>
+                                      <p></p>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="src/Capital britannica.jpeg" class="d-block w-100" alt="Lemur Power Pose">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>City</h5>
+                                      <p></p>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="src/Desert.jpeg" class="d-block w-100" alt="I, lord Seal, convene the council of penguins...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>Desert</h5>
+                                      <p></p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <!-- here go the text -->
+                        <div class="text">
+                            <p>Mauritania is culturally and politically part of the Arab world: it is a member of the Arab League and Arabic is the sole official language. Reflecting its colonial heritage, French is widely spoken and serves as a lingua franca. The official religion is Islam, and almost all inhabitants are Sunni Muslims. Despite its prevailing Arab identity, Mauritanian society is multiethnic: the Bidhan, or so-called "white moors", make up 30% of the population, while the Haratin, or so-called "black moors", comprise 40%. Both groups reflect a fusion of Arab-Berber ethnicity, language, and culture. The remaining 30% of the population comprises various sub-Saharan ethnic groups. </p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

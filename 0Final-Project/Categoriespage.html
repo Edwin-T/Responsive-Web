@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    body{
+        background-color: rgb(219, 219, 204);
+    }
+img{
+    max-width: 80%;
+    height: 150px;
+    margin: auto;
+}
+    .categories{
+        width: 80%;
+        font-size: 3em;
+        text-align: center;
+        background-color: rgb(84, 84, 207);
+        color: white;
+        margin: auto;
+    }
+    .text{
+        width: 70%;
+        font-size: 2em;
+        text-align: center;
+        background-color: rgb(84, 84, 207);
+        color: white;
+        border-top: 1px solid black;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .end{
+        margin: 30px;
+    }
+    .cardA{
+        width: 80%;
+        
+        align-items: center;
+        margin: auto;
+
+
+    }
+    .cardx{
+        width: 220px;
+        height: 250px;
+        
+        margin: auto;
+    }
+    .card{
+        max-width: 100%;
+        height: 250px;
+        background-color: beige;
+
+    }
+    @media screen and (max-device-width:768px ){
+        .cardA{
+            display: grid;
+            grid-template-columns: 1fr ;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        body{
+        margin: 0;
+    }
+    }
+    @media screen and (min-device-width:769px ){
+        .cardA{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        body{
+        margin: 0;
+    }
+    }
+    @media screen and (min-device-width:1201px){
+        .cardA{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        body{
+        margin: 0;
+    }
+    }
+</style>
+</head>
+<body>
+    <div class="menu">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+            </button>
+            <ul class="dropdown-menu">
+                
+                <!-- Home page -->
+            <li><a class="dropdown-item" href="Homepage.html">HomePage</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Categoriespage.html">Categories</a></li>
+            <li><a class="dropdown-item" href="ExtraInfo.html">Extra_info</a></li>
+            <li><a class="dropdown-item" href="feedbackpage.html">Feedback page</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="categories">Here are the different Categories</div>
+    <div class="text">Click on a categories to have more information about it</div>
+    <div class="cardA">
+        <div class="cardx 1">
+            <div class="card" style="width: 18rem;">
+                <img src="Src/Leaders/Mohamed Mahmoud Ould Loul.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">History</h5>
+                  
+                  <a href="ItemHistory.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="You just need to click">Let's go!</a>
+                </div>
+              </div>
+        </div>
+        <div class="cardx 2">
+            <div class="card" style="width: 18rem;">
+                <img src="Src/Location.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Location</h5>
+                  
+                  <a href="ItemLocation.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="You just need to click">Let's go!</a>
+                </div>
+              </div>
+        </div>
+        <div class="cardx 3">
+            <div class="card" style="width: 18rem;">
+                <img src="Src/Cities/Bareina,city.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cities and region</h5>
+                  <a href="Itemcity.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="You just need to click">Let's go!</a>
+                </div>
+              </div>
+        </div>
+        <div class="cardx 4">
+            <div class="card" style="width: 18rem;">
+                <img src="Src/Demographics/ethnic-composition-pie-chart-Mauritania.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Demographics</h5>
+                 <a href="ItemDemographic.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="You just need to click">Let's Go!</a>
+                </div>
+              </div>
+        </div>
+        <div class="cardx 5">
+            <div class="card" style="width: 18rem;">
+                <img src="Src/Climate/Mauritania_ClimatePrecip.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Climate</h5>
+                <a href="itemClimate.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="You just need to click">Let's Go!</a>
+                </div>
+              </div>
+        </div>
+        <div class="cardx 6">
+            <div class="card" style="width: 18rem;">
+                <img src="Src/Landmarks&sites/Adrar Plateau-Main.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Landmarks/Sites</h5>
+                 <a href="ItemLandsmark.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="You just need to click">Let's Go!</a>
+                </div>
+              </div>
+        </div>
+        <div class="cardx 7">
+            <div class="card" style="width: 18rem;">
+                <img src="Src/Date/Time-zone.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Date & Time </h5>
+                  <a href="ItemDate.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="You just need to click">Let's Go!</a>
+                </div>
+              </div>
+        </div>
+        
+        <div class="cardx 9">
+            <div class="card" style="width: 18rem;">
+                <img src="Src/Nationale-Symbols/Cheetah.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nationale Symbols</h5>
+                 <a href="ItemNationalSymbols.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="You just need to click">Let's Go!</a>
+                </div>
+              </div>
+        </div>
+        <div class="cardx 10">
+            <div class="card" style="width: 18rem;">
+                <img src="Src/famous-personalities/Malouma Mint Moktar Ould Meidah 2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Famous Personalities</h5>
+                 <a href="ItemFamousppl.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="You just need to click">Let's Go!</a>
+                </div>
+              </div>
+        </div>
+        <div class="cardx 11">
+            <div class="card" style="width: 18rem;">
+                <img src="Src/Natural features/Forest.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Natural features</h5>
+                 <a href="ItemNaturalFeatures.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="You just need to click">Let's Go!</a>
+                </div>
+              </div>
+        </div>
+        <div class="cardx 12">
+            <div class="card" style="width: 18rem;">
+                <img src="Src/Culture/ART-Main.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Culture</h5>
+                  <a href="ItemCulture.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="You just need to click">Let's Go!</a>
+                </div>
+              </div>
+        </div>
+        <div class="cardx 8">
+            <div class="card" style="width: 18rem;">
+                <img src="Src/Economy/Economy.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Economy</h5>
+                 <a href="ItemEconomy.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="You just need to click">Let's Go!</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="categories end">END</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+body{
+  background-color: beige;
+  color: rgb(58, 55, 55);
+}
+    .item{
+        width: 80%;
+        font-size: 3em;
+        text-align: center;
+        margin: auto;
+    }
+    .item2{
+        width: 80%;
+        font-size: 1.5em;
+        border-bottom: 1px solid black;
+        color: grey;
+        margin: auto;
+    }
+    .text2{
+        width: 70%;
+        text-align: center;
+        
+        border: 2px solid grey;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .text{
+        width: 70%;
+        font-size: 2em;
+        text-align: center;
+        
+        border-top: 2px solid black;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .content{
+        width: 80%;
+        
+        margin: auto;
+        margin-top: 30px;
+    }
+    .car-content{
+        width: 30%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    img{
+        height: 200px;
+    }
+    .accordx{
+        width: 80%;
+        justify-self: center;
+        
+    }
+    .end{
+        margin: 30px;
+
+    }
+    @media screen and (max-device-width:768px ){
+          
+        body{
+        margin: 0;
+        
+    }
+        .content{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .accordx{
+        width: 80%;
+        margin: auto;
+    }
+    }
+    @media screen and (min-device-width:769px ){
+
+        body{
+        margin: 0;
+    }
+    .content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+    }
+    @media screen and (min-device-width:1201px){
+        
+        body{
+        margin: 0;
+    }
+    }
+</style>
+</head>
+<body>
+    <div class="menu">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Homepage.html">Menu</a></li>
+                <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Categoriespage.html">Categories</a></li>
+            
+            <li><a class="dropdown-item" href="ExtraInfo.html">Extra_info</a></li>
+            <li><a class="dropdown-item" href="feedbackpage.html">Feedback page</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="item">Date and Time.</div>
+    <div class="text"> Gain some knowledge from the following</div>
+
+    <!-- here goes the image caroussel -->
+    <div class="car-content">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Src/Date/Time-zone.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Src/Date/Eid_m.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Src/Date/200px-Eid_al-Fitr_prayer,_Suleymaniye_Mosque,_Istanbul_-_Aug_30,_2011.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+<div class="container">
+    <div class="row d-lg-none d-xl-none">
+        <div class="content">
+            <div class="accordx x">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+
+                        <!-- First informaiton -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Time Zone
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Time Zone</strong>UTC +0 GMT: time Zone Currently Being Used in Mauritania
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- second information -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Holiday
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Holiday</strong> Eid al-Fitr, Holiday of Breaking the Fast',  is the earlier of the two official holidays celebrated within Islam (the other being Eid al-Adha). The religious holiday is celebrated by Muslims worldwide because it marks the end of the month-long dawn-to-sunset fasting of Ramadan. It falls on the first day of Shawwal in the Islamic calendar; this does not always fall on the same Gregorian day, as the start of any lunar Hijri month varies based on when the new moon is sighted by local religious authorities. The holiday is known under various other names in different languages and countries around the world. The day is also called Lesser Eid, or simply Eid.
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+            </div>
+
+
+            <!-- Second accordion row -->
+            <div class="accordx x">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingfour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                            Mawlid
+                          </button>
+                        </h2>
+                        <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>Mawlid</strong>Mawlid an-Nabi ash-Sharif or Eid Milad un Nabi Birth of the Prophet', sometimes simply called in colloquial Arabic is the observance of the birthday of the Islamic prophet Muhammadwhich is commemorated in Rabi' al-awwal, the third month in the Islamic calendar. 12th Rabi' al-awwal is the accepted date among most of the Sunni scholars, while most Shia scholars regard 17th Rabi' al-awwal as the accepted date, though not all Shias consider it to be this date. It is also called Maouloud in West Africa
+                          </div>
+                        </div>
+                      </div>
+
+                 
+                  </div>
+            </div>
+         </div>
+    </div>
+    <!-- Get displayed only on large Screen and more -->
+    <div class="row d-none d-lg-block d-xl-block">
+        <div class="newcontent">
+            <div class="item2">Time Zone</div>
+    <div class="text2"> UTC +0 GMT: time Zone Currently Being Used in Mauritania</div>
+    <div class="item2">Holidays</div>
+    <div class="text2"> Eid al-Fitr, Holiday of Breaking the Fast',  is the earlier of the two official holidays celebrated within Islam (the other being Eid al-Adha). The religious holiday is celebrated by Muslims worldwide because it marks the end of the month-long dawn-to-sunset fasting of Ramadan. It falls on the first day of Shawwal in the Islamic calendar; this does not always fall on the same Gregorian day, as the start of any lunar Hijri month varies based on when the new moon is sighted by local religious authorities. The holiday is known under various other names in different languages and countries around the world. The day is also called Lesser Eid, or simply Eid.</div>
+          
+      <div class="item2">Mawlid</div>
+      
+      <div class="text2">  Mawlid an-Nabi ash-Sharif or Eid Milad un Nabi Birth of the Prophet', sometimes simply called in colloquial Arabic is the observance of the birthday of the Islamic prophet Muhammadwhich is commemorated in Rabi' al-awwal, the third month in the Islamic calendar. 12th Rabi' al-awwal is the accepted date among most of the Sunni scholars, while most Shia scholars regard 17th Rabi' al-awwal as the accepted date, though not all Shias consider it to be this date. It is also called Maouloud in West Africa</div>
+   
+  </div>
+    </div>
+
+</div>
+         
+    
+    <div class="categories end">END</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

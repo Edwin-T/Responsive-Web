@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+body{
+  background-color: beige;
+  color: black
+}
+    .item{
+        width: 80%;
+        font-size: 3em;
+        text-align: center;
+        margin: auto;
+    }
+    .item2{
+        width: 80%;
+        font-size: 1.5em;
+        border-bottom: 1px solid black;
+        
+        margin: auto;
+    }
+    .text2{
+        width: 70%;
+        text-align: center;
+        
+        border: 2px solid grey;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .text{
+        width: 70%;
+        font-size: 2em;
+        text-align: center;
+        
+        border-top: 2px solid black;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .content{
+        width: 80%;
+        
+        margin: auto;
+        margin-top: 30px;
+    }
+    .car-content{
+        width: 30%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    img{
+        height: 200px;
+    }
+    .accordx{
+        width: 80%;
+        justify-self: center;
+        
+    }
+    .end{
+        margin: 30px;
+
+    }
+    @media screen and (max-device-width:768px ){
+          
+        body{
+        margin: 0;
+        
+    }
+        .content{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .accordx{
+        width: 80%;
+        margin: auto;
+    }
+    }
+    @media screen and (min-device-width:769px ){
+
+        body{
+        margin: 0;
+    }
+    .content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+    }
+    @media screen and (min-device-width:1201px){
+        
+        body{
+        margin: 0;
+    }
+    }
+</style>
+</head>
+<body>
+    <div class="menu">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Homepage.html">Menu</a></li>
+                <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Categoriespage.html">Categories</a></li>
+            
+            <li><a class="dropdown-item" href="ExtraInfo.html">Extra_info</a></li>
+            <li><a class="dropdown-item" href="feedbackpage.html">Feedback page</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="item">Climate</div>
+    <div class="text"> Gain some knowledge from the following</div>
+
+    <!-- here goes the image caroussel -->
+    <div class="car-content">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Src/Climate/Snow.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Src/Climate/Mauritania_ClimatePrecip.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Src/Climate/storm.JPG" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+<div class="container">
+    <div class="row d-lg-none d-xl-none">
+        <div class="content">
+            <div class="accordx x">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+
+                        <!-- First informaiton -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Weather patterns
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Weather patterns</strong>In Nouakchott, the summers are short, hot, and muggy; the winters are short, comfortable, and windy; and it is dry and partly cloudy year round. Over the course of the year, the temperature typically varies from 15 °C to 35 °C and is rarely below 12 °C or above 41 °C. 
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- second information -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Seasons
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Seasons</strong>The year can be roughly divided into summer, between May and October, and winter, between November and April. The average temperature in Nouadhibou, a coastal city, ranges between 55F and 79F (13C and 26C) in January, and between 66F and 90F (19C and 32C) in October. The rainy season, between July and September, is the most humid period in the south, which can be uncomfortable.
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+            </div>
+
+
+            <!-- Second accordion row -->
+            <div class="accordx x">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingfour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                            Temperature
+                          </button>
+                        </h2>
+                        <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>Temperature</strong>The country’s southern edge, which reaches the Sahel, has a wet season controlled by the movement of the Inter-Tropical Convergence Zone (ITCZ) which oscillates between the northern and southern tropics over the course of a year. The country’s mean monthly temperature stays above 25°C year-round with the hot season occurring from May to October, with peak mean monthly temperatures reaching 33°C in June and July.
+                          </div>
+                        </div>
+                      </div>
+
+                 
+                  </div>
+            </div>
+         </div>
+    </div>
+    <!-- Get displayed only on large Screen and more -->
+    <div class="row d-none d-lg-block d-xl-block">
+        <div class="newcontent">
+            <div class="item2">Weather patterns</div>
+    <div class="text2"> In Nouakchott, the summers are short, hot, and muggy; the winters are short, comfortable, and windy; and it is dry and partly cloudy year round. Over the course of the year, the temperature typically varies from 15 °C to 35 °C and is rarely below 12 °C or above 41 °C. </div>
+    <div class="item2">Seasons</div>
+    <div class="text2">The year can be roughly divided into summer, between May and October, and winter, between November and April. The average temperature in Nouadhibou, a coastal city, ranges between 55F and 79F (13C and 26C) in January, and between 66F and 90F (19C and 32C) in October. The rainy season, between July and September, is the most humid period in the south, which can be uncomfortable.</div>
+          
+      <div class="item2">Temperature</div>
+      
+      <div class="text2">  The country’s southern edge, which reaches the Sahel, has a wet season controlled by the movement of the Inter-Tropical Convergence Zone (ITCZ) which oscillates between the northern and southern tropics over the course of a year. The country’s mean monthly temperature stays above 25°C year-round with the hot season occurring from May to October, with peak mean monthly temperatures reaching 33°C in June and July.</div>
+   
+  </div>
+    </div>
+
+</div>
+         
+    
+    <div class="categories end">END</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

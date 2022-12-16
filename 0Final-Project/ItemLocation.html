@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+body{
+  background-color: beige;
+  color: rgb(58, 55, 55);
+}
+    .item{
+        width: 80%;
+        font-size: 3em;
+        text-align: center;
+        margin: auto;
+    }
+    .item2{
+        width: 80%;
+        font-size: 1.5em;
+        border-bottom: 1px solid black;
+        color: grey;
+        margin: auto;
+    }
+    .text2{
+        width: 70%;
+        text-align: center;
+        
+        border: 2px solid grey;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .text{
+        width: 70%;
+        font-size: 2em;
+        text-align: center;
+        
+        border-top: 2px solid black;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .content{
+        width: 80%;
+        
+        margin: auto;
+        margin-top: 30px;
+    }
+    .car-content{
+        width: 30%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    img{
+        height: 200px;
+    }
+    .accordx{
+        width: 80%;
+        justify-self: center;
+        
+    }
+    .end{
+        margin: 30px;
+
+    }
+    @media screen and (max-device-width:768px ){
+          
+        body{
+        margin: 0;
+        
+    }
+        .content{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .accordx{
+        width: 80%;
+        margin: auto;
+    }
+    }
+    @media screen and (min-device-width:769px ){
+
+        body{
+        margin: 0;
+    }
+    .content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+    }
+    @media screen and (min-device-width:1201px){
+        
+        body{
+        margin: 0;
+    }
+    }
+</style>
+</head>
+<body>
+    <div class="menu">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Homepage.html">Menu</a></li>
+                <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Categoriespage.html">Categories</a></li>
+            
+            <li><a class="dropdown-item" href="ExtraInfo.html">Extra_info</a></li>
+            <li><a class="dropdown-item" href="feedbackpage.html">Feedback page</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="item">Location</div>
+    <div class="text"> Gain some knowledge from the following</div>
+
+    <!-- here goes the image caroussel -->
+    <div class="car-content">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Src/Desert.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Src/Location.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Src/Flag.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+<div class="container">
+    <div class="row d-lg-none d-xl-none">
+        <div class="content">
+            <div class="accordx x">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+
+                        <!-- First informaiton -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Location
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Location</strong>Mauritania, country on the Atlantic coast of Africa. Mauritania forms a geographic and cultural bridge between the North African Maghrib (a region that also includes Morocco, Algeria, and Tunisia) and the westernmost portion of sub-Saharan Africa.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- second information -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Size
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Size</strong>Mauritania has an area of 1,030,700 sq km (397,955 sq mi). Mauritania extends 1,515 km (941 mi) NE – SW and 1,314 km (816 mi) SE – NW . Comparatively, the area occupied by Mauritania is slightly larger than three times the size of the state of New Mexico. It is bordered on the NE by Algeria, on the E and S by Mali, on the SW by Senegal, on the W by the Atlantic Ocean, and on the NW and N by the Western Sahara, with a total estimated boundary length of 5,828 km (3,621 mi), of which 754 km (469 mi) is coastline.
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+            </div>
+
+
+            <!-- Second accordion row -->
+            <div class="accordx x">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingfour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                            Border
+                          </button>
+                        </h2>
+                        <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>Border</strong>The border starts in the north at the tripoint with Algeria, proceeding south in a straight of 146 kilometres (91 mi), then turning west following the 26th parallel north for 334 kilometres (208 mi), then turning south along the 12th meridian west for 176 kilometres (109 mi).[2] The border then turns to the south-west via a broad arc down to 21°20'N, following this parallel westwards for 408 kilometres (254 mi). Just south of Guerguerat the border turns south, bisecting the Ras Nouadhibou peninsula and terminating at its tip on the Atlantic Coast.
+                          </div>
+                        </div>
+                      </div>
+
+                 
+                  </div>
+            </div>
+         </div>
+    </div>
+    <!-- Get displayed only on large Screen and more -->
+    <div class="row d-none d-lg-block d-xl-block">
+        <div class="newcontent">
+            <div class="item2">Location</div>
+    <div class="text2"> Mauritania, country on the Atlantic coast of Africa. Mauritania forms a geographic and cultural bridge between the North African Maghrib (a region that also includes Morocco, Algeria, and Tunisia) and the westernmost portion of sub-Saharan Africa.</div>
+    <div class="item2">Size</div>
+    <div class="text2"> Mauritania has an area of 1,030,700 sq km (397,955 sq mi). Mauritania extends 1,515 km (941 mi) NE – SW and 1,314 km (816 mi) SE – NW . Comparatively, the area occupied by Mauritania is slightly larger than three times the size of the state of New Mexico. It is bordered on the NE by Algeria, on the E and S by Mali, on the SW by Senegal, on the W by the Atlantic Ocean, and on the NW and N by the Western Sahara, with a total estimated boundary length of 5,828 km (3,621 mi), of which 754 km (469 mi) is coastline.</div>
+          
+      <div class="item2">Border</div>
+      
+      <div class="text2">   The border starts in the north at the tripoint with Algeria, proceeding south in a straight of 146 kilometres (91 mi), then turning west following the 26th parallel north for 334 kilometres (208 mi), then turning south along the 12th meridian west for 176 kilometres (109 mi).[2] The border then turns to the south-west via a broad arc down to 21°20'N, following this parallel westwards for 408 kilometres (254 mi). Just south of Guerguerat the border turns south, bisecting the Ras Nouadhibou peninsula and terminating at its tip on the Atlantic Coast.</div>
+   
+  </div>
+    </div>
+
+</div>
+         
+    
+    <div class="categories end">END</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
